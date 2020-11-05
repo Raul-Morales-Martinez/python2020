@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px dotted red;
+}
+
+#padre {
+    width: 98%;
+    height: 98%;
+    padding: 2%;
+    background-color: teal;
+}
+
+h1 {
+    background-color: #b3b3b3;
+}
+
+#text1 {
+    background-color: #cccccc;
+}

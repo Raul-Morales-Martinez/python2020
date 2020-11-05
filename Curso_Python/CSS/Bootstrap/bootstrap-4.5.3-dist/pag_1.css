@@ -1,0 +1,11 @@
+.container-fluid {
+    background-color: gray;
+}
+
+.rounded-circle {
+    border-radius: 50px !important;
+}
+
+.text-muted {
+    color: whitesmoke !important;
+}

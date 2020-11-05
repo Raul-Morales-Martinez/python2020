@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea formulario</title>
+</head>
+
+<body>
+    <div>
+        <form action="ejercicio.html" method="POST">
+            <h1>Mi Formulario de Registro</h1>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre"><br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="Apellido" name="Apellido"><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email"><br>
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="Contraseña" name="Contraseña"><br>
+            <label for="ConfContraseña">Confirme Contraseña:</label>
+            <input type="password" id="ConfContraseña" name="ConfContraseña"><br>
+            <label for="cumpleaños">Fecha de cumpleaños</label>
+            <input type="date" id="cumpleaños" name="cumpleaños"><br>
+            <input type="radio" id="hombre" name="genero" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="genero" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otro</label><br>
+            <!-- todos los type= radio son los circulos -->
+            <p>Una breve descripción de ti:</p>
+            <textarea id="description" name="description"></textarea><br>
+            <!--Cuadro de texto-->
+            <p> Lenguaje Favorito</p>
+            <select> <!--Lista de selección -->
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Otros">Otros</option>
+            </select> <br>
+
+            <input type="submit" value="Enviar">
+            <input type="button" value="Enviar">
+            <!--en submit se envia información ; button es para dar una accion al boton -->
+            <!-- boton y en value: nombre del boton-->
+        </form>
+    </div>
+</body>
+
+</html>

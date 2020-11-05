@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#padre {
+    width: 980px;
+    height: auto;
+    margin: 0px auto;
+    background-color: whitesmoke;
+    padding: 10px 0px 10px 0px;
+    border: 0.1px solid black
+}
+
+#top {
+    width: 970px;
+    padding: 10px;
+}
+
+h1 {
+    display: inline;
+    margin-right: 510px;
+}
+
+#texttop {
+    display: inline;
+    font-size: 20px;
+}
+
+#center {
+    width: 940px;
+    min-height: 300px;
+    background-image: radial-gradient(#6f5964, #48343c, #4c3841, #1c0c10);
+    padding: 20px;
+}
+
+#div0 {
+    width: 450px;
+    height: 280px;
+    background-color: #c0c0c0;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 14px;
+    vertical-align: top;
+    padding: 5px;
+}
+
+#principal {
+    width: 450px;
+    height: 280px;
+}
+
+#div1 {
+    width: 460px;
+    height: 290px;
+    background-image: linear-gradient(to right, #fffeff, #daccd9);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.text1 {
+    margin: 10px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+#continue {
+    margin: 10px;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+#div3 {
+    margin: 0px 12px 0px 12px;
+}
+
+.cajas {
+    width: 302px;
+    height: 650px;
+    background-image: linear-gradient(to right, #fffeff, #daccd9);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tit {
+    width: auto;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    background-image: linear-gradient(#b4b3b7, #878693, #bcbcbf);
+}
+
+.foto {
+    width: 300px;
+}
+
+.parrafo {
+    margin: 15px;
+    text-align: justify;
+    margin-bottom: 75px;
+}
+
+#parrf2 {
+    margin-bottom: 58px;
+}
+
+#parrf3 {
+    margin-bottom: 21px;
+}
+
+.subtit {
+    width: auto;
+    color: white;
+    background-image: linear-gradient(#b4b3b7, #878693, #bcbcbf);
+    padding: 8px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.iconos {
+    width: 47px;
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.links {
+    width: 76px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 110px;
+    color: white;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #407d61;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#link2 {
+    width: 120px;
+    margin-left: 90px;
+}
+
+#bottom {
+    width: 980px;
+    padding: 10px;
+}
+
+#bott1 {
+    text-align: center;
+}
+
+.logo {
+    width: 25px;
+    vertical-align: middle;
+}
+
+#git {
+    margin-left: 310px;
+}
+
+.accs {
+    color: black;
+}

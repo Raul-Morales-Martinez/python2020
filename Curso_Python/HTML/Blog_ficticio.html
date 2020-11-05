@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Ficticio</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 20%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 5px;
+            font-size: 15px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <!--Titulo, imagen y descripción -->
+            <h1>Michel Jordan </h1>
+            <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisa/SJZL7YW462YTG4MVO65HJ2ULKE.jpg" alt="Imagen no disponible" height="300" width="300"><br>
+            <p style="width: 50%;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere pulvinar posuere. Donec libero lorem, laoreet in accumsan ac, iaculis quis neque. Nam egestas, leo in iaculis egestas, justo libero feugiat nisl, sit amet vestibulum
+                dui tellus vitae urna. Quisque placerat id est facilisis lacinia. Vestibulum lobortis tempus pretium. Cras orci ipsum, porttitor at odio in, venenatis congue ligula. Aliquam sit amet maximus magna. Quisque sem mauris, accumsan feugiat
+                magna eu, consequat egestas elit. Mauris sed lorem ornare, feugiat sapien sed, mattis turpis. Duis et facilisis diam. Duis non urna efficitur, malesuada magna sed, euismod ante. Ut imperdiet lorem vel diam viverra, quis placerat nisi faucibus.
+                Aenean gravida lorem in efficitur aliquet. Morbi sem est, vulputate vel enim at, dictum congue orci.</p>
+
+            <!--Tabla -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>PPG</th>
+                        <th>MVP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1990-91</td>
+                        <td>31.5</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td>1991-92</td>
+                        <td>30.1</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td>1992-93</td>
+                        <td>32.6</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>1995-96</td>
+                        <td>30.4</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td>1996-97</td>
+                        <td>29.6</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>1997-98</td>
+                        <td>28.7</td>
+                        <td>Si</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Lista no ordenada-->
+            <ul>
+                <li>1984 - 1983 Chicago Bulls</li>
+                <li>1995 - 1998 Chicago Bulls</li>
+                <li>2001 - 2003 Washintong Wizards</li>
+            </ul>
+
+
+            <!-- enlace a youtube-->
+            <a href="https://www.youtube.com/watch?v=oC-GflRB0y4" target="_blank"> Ir a Youtube </a><br>
+            <br>
+        </div>
+        <div>
+            <!--Formulario-->
+            <form action="Formulario.html" method="POST">
+                <label for="correo"> Email:</label>
+                <input type="email" id="correo" name="correo"><br>
+                <br>
+                <input type="radio" id="respuesta1" name="respuesta" value="respuesta1">
+                <label for="respuesta1">Si, por favor enviame montones de correos </label><br>
+                <input type="radio" id="respuesta2" name="respuesta" value="respuesta2">
+                <label for="respuesta2">No por favor, no me mandes ningún correo </label><br>
+                <h4>¿Como supiste de nosotros?</h4>
+                <input type="checkbox" id="facebook" name="redcontacto" value="facebook">
+                <label for="facebook">Facebook </label><br>
+                <input type="checkbox" id="periodico" name="redcontacto" value="periodico">
+                <label for="periodico">El periódico</label><br>
+                <input type="checkbox" id="contacto" name="redcontacto" value="contacto">
+                <label for="contacto">Un contacto</label><br>
+                <br>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
