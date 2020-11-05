@@ -139,8 +139,7 @@ function printAverage(x) {
 
 
 
-    //3) Cuadra cada valor con un array dado, obteniendo el mismo array con valores cambiados..
-
+    //3) Cuadra cada valor con un array dado, obteniendo el
     function squareValue(x) {
 
         for (var i = 1; i < x.length; i++) {

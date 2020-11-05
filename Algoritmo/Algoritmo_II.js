@@ -1,6 +1,6 @@
 //1
 function printUpTo(x) { //x=1000  - x=-10
-    // your code here
+
     if (x < 0) { //-10<0
         console.log("Numero negativo");
         return false;
@@ -34,7 +34,7 @@ console.log(y) // // debería imprimir 32640
 function printSumArray(x) { // x=[1,2,3]; x[0]=>1; x[1]=>2; x[2]=>3; x.legth=3; 
     var sum = 0; //1>3>6
     for (var i = 0; i < x.length; i++) { //i=0,1,2,3
-        //your code here
+
         sum = sum + x[i];
     }
     return sum;
