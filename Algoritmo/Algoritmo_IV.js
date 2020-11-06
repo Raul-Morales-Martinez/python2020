@@ -66,7 +66,7 @@ console.log(f);
 //4
 
 function removerRango(arre, ranginic, rangfin) {
-    if (ranginic <= rangfin && rangfin >= 0 && ranginic >= 0 && ranginic <= arre.length && rangfin < arre.length) {
+    if (ranginic <= rangfin && rangfin >= 0 && ranginic >= 0 && ranginic <= arre.length && rangfin < = arre.length) {
         let newarray = [];
         for (i = 0; i < arre.length; i++) {
             if (i < ranginic || i > rangfin) {

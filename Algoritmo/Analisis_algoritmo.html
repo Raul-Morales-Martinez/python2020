@@ -1,22 +1,18 @@
 <html>
 <script>
-    function removerRango(arre, ranginic, rangfin) {
-        if (ranginic <= rangfin && rangfin > 0 && ranginic >= 0 && ranginic >= arre.length && rangfin <= arre.length) {
-            let newarray;
-            for (i = 0; i < arre.length; i++) {
-                if (i < ranginic || i > rangfin) {
-                    newarray.push(arre[i]);
+    function resetNegativos(arreglo) {
 
-                }
+        for (var i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] < 0) {
+                arreglo[i] = arreglo[i] - arreglo[i];
             }
-            return newarray;
         }
-        return "Revisar datos"
+        return arreglo;
 
     }
 
-    g = removerRango([20, 30, 40, 50, 60, 70], 2, 4);
-    console.log(g);
+    var resultado = resetNegativos([1, 2, -1, -3]);
+    console.log(resultado);
 </script>
 
 </html>
