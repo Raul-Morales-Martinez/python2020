@@ -1,18 +1,22 @@
 <html>
 <script>
-    function ejercicio1(arreglo, y) {
-        var cantidad = 0;
+    function removerRango(arre, ranginic, rangfin) {
+        if (ranginic <= rangfin && rangfin > 0 && ranginic >= 0 && ranginic >= arre.length && rangfin <= arre.length) {
+            let newarray;
+            for (i = 0; i < arre.length; i++) {
+                if (i < ranginic || i > rangfin) {
+                    newarray.push(arre[i]);
 
-        for (var i = 0; i < arreglo.length; i++) {
-            if (arreglo[i] > y) {
-                cantidad = cantidad + 1;
+                }
             }
+            return newarray;
         }
-        return cantidad;
+        return "Revisar datos"
+
     }
 
-    b = ejercicio1([7 5 6 8 2 4] 5);
-    console.log(b);
+    g = removerRango([20, 30, 40, 50, 60, 70], 2, 4);
+    console.log(g);
 </script>
 
 </html>
