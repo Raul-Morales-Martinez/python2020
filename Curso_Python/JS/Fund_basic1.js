@@ -1,6 +1,15 @@
-/**
- * 
+/** 1
+ * Escribe una función que devuelve un array con todos los números del 1 al 255.
  */
+
+function valarray() {
+    let valores = [];
+    for (let i = 1; i < 256; i++) {
+        valores.push(i);
+    }
+    return valores
+}
+console.log(valarray());
 
 /** 2
  * Escribe una función que entregue la suma de todos los números pares del 1 al 1000 - 
