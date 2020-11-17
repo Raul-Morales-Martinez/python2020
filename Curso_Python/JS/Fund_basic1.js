@@ -125,13 +125,13 @@ console.log(numerMayorarray([1, 3, 5, 7], 3));
  */
 
 function cuadrado(array) {
-    let arraycuad = [];
-    let cuad;
+    /*let arraycuad = [];
+    let cuad;*/
     for (let i = 0; i < array.length; i++) {
-        cuad = array[i] * array[i];
-        arraycuad.push(cuad);
+        array[i] = array[i] * array[i];
+        /* arraycuad.push(cuad);*/
     }
-    return arraycuad;
+    return array;
 
 }
 console.log(cuadrado([1, 5, 10, -2]))
