@@ -105,11 +105,11 @@ console.log(tresseguidos([2, 4, 5, 7, 6, 9]));
  * Luego, console.log cada valor del array y devuelve arr.
  */
 function impar(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (i % 2 != 0) {
-            arr[i] = arr[i] + 1;
+    for (let i = 0; i < arr.length; i++) { //0 1 2 3
+        if (i % 2 != 0) { //1 3
+            arr[i] = arr[i] + 1; //1  3 //(4+1) (7+1)
         }
-        console.log(arr[i]);
+        console.log(arr[i]); //2 5 5 8
     }
     return arr
 }
@@ -202,15 +202,9 @@ console.log(hambriento(["comida", "comida", 1, 2, "comida"]));
  */
 
 function cambiaHaciaElCentro(array) {
-    let valores = [];
-    valores.push(array[0]);
-    valores.push(array[array.length - 1]);
-    valores.push(array[2]);
-    valores.push(array[array.length - 3]);
-    array[0] = valores[1];
-    array[array.length - 1] = valores[0];
-    array[2] = valores[3];
-    array[array.length - 3] = valores[2];
+    for (let i = 0; i < array.length / 2; i++) {
+        [array[i], array[array.length - 1 - i]] = [array[array.length - 1 - i], array[i]]
+    }
     return array;
 }
 
