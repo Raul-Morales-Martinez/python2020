@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+
+
+    <script>
+        $(document).ready(function() {
+            $('h4').click(function() {
+                alert('hello');
+            })
+            $('#hide').click(function() {
+                $('p').hide();
+            })
+            $('#show').click(function() {
+                $('p').show();
+            })
+
+            $('h3').hover(function() {
+                $('h2').text('ha cambiado el texto');
+            })
+            $('.append').click(function() {
+                $('.result').append('<h4> append agregado al HTML! </h4>')
+            })
+            $('button').click(function() {
+                    $('button').css('background-color', 'yellow');
+                })
+                // var myText = $('#myParagraph').text();
+                // alert(myText);
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <h4>hola hola</h4>
+    <p>esto es un parrafo</p>
+    <p>este es otroooo parrafo</p>
+    <button id="hide">this will hide all parrafo </button>
+    <button id="show">esto mostrara todos los parrafos</button>
+    <h2>wala walla lalalalalal</h2>
+    <h3> apreeeeeeendeeee,...!!!!1</h3>
+    <button class="append">click para ver .apped work!</button>
+    <div class="result"></div>
+    <p id='myParagraph'> ¡Este es mi párrafo! </p>
+
+</body>
+
+</html>
