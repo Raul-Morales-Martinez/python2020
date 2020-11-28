@@ -1,0 +1,12 @@
+du
+more
+cd
+mkdir
+exit
+mv
+cp
+rm
+passwd
+rmdir
+ls
+man
