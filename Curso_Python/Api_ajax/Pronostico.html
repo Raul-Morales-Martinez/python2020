@@ -11,19 +11,19 @@
         $(document).ready(function() {
             $('form').submit(function(event) {
                 // your code here (build up your url)
-                // $.get("http://api.openweathermap.org/data/2.5/weather?q=020133524b42006fd3b113842447e99e" + algo + "", function(res) {
-                // your code here
-                var html_src = ""
-                html_src = "<h3>" + algo + ": " + res.weather.description + "</h3>"
-                html_src = "<h3>Temperature: " + res.main.temp + "F</h3>"
-                html_src = "<h3>Coord: " + res.coord.lon + "," + res.coord.lon + "</h3>"
-                $('button').click(function() {
-                    $('#clima').html(html_src);
-
-                })
-                $('#boton').append(html_src)
-                    // }, 'json');
-                    // don't forget to return false so the page doesn't refresh
+                console.log("llego")
+                var ciudad = $(".enviar").val();
+                var url = "https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&&appid=020133524b42006fd3b113842447e99e"
+                $.get(url, function(res) {
+                    // your code here
+                    console.log(res.weather)
+                    var html_src = ""
+                    html_src += "<h3>" + ciudad + ": " + res.weather[0].description + "</h3>"
+                    html_src += "<h3>Temperature: " + res.main.temp + "F</h3>"
+                    html_src += "<h3>Coord: " + res.coord.lon + "," + res.coord.lat + "</h3>"
+                    $('.info').html(html_src)
+                }, 'json');
+                // don't forget to return false so the page doesn't refresh
                 return false;
             });
         });
@@ -31,14 +31,16 @@
 </head>
 
 <body>
-    <div class="countainer-fluid p-1 text-center btn-secondary">
+    <div class="countainer-fluid p-3 text-center btn-secondary">
         <h1>Pronostico del Tiempo</h1>
 
         <div class="input-group mb-3" id="clima">
-            <span class="input-group-text" id="inputGroup-sizing-default">City:</span>
-            <input type="text" class="form-control col-4 enviar" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            <button type="submit">Subimit Query </button><br>
-            <button id="boton">aprieta</button>
+            <form action="">
+                <span class="input-group-text" id="inputGroup-sizing-default">City:</span>
+                <input type="text" class="form-control col enviar" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <!-- <button type="submit">Subimit Query </button><br> -->
+                <input type="submit">Subimit Query </input>
+            </form>
         </div>
         <div class="info">
 
