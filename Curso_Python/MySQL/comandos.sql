@@ -46,3 +46,8 @@ alter table tabla1 rename as usuarios;
 
 --borrar base de datos
 drop database zzz;
+
+-- desde de la terminal para importar una base de datos desde la terminal
+mysql -u root -p< (nombrearchivo).sql --desde la ubicacion del archivo
+
+-- like sirve para encontrar fracciones de palabras, se ultilizan los % para ejemplificar que hay algo antes o depues de las palabras
